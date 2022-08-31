@@ -1,0 +1,39 @@
+<!--
+  2.  Draw a smiley face using SVG and animate the eyes
+
+-->
+
+<html>
+  <head>    
+    <title>Task 2 : Smiley Face </title>   
+    <style>
+      svg { border: 1px solid black; }
+
+      .circled:hover .eye
+      {
+        ry:0;
+      }
+
+      .eye
+      {
+        ry:12;
+        transition: ry 0.2s ease;
+      }
+    </style>
+  </head>
+  <body>
+   <center>
+    <svg height="300" width="300">
+      <g class="circled">
+        <circle class="circled" cx="150" cy="150" r="80" stroke="black" stroke-width="3" fill="Yellow"/>
+        
+        <ellipse cx="111" cy="132" rx=12 class='eye' />
+        <ellipse cx="190" cy="132" rx=12 class='eye' />
+        
+        <path d="M110,180 Q150,225 190,180" stroke="black" stroke-width="3" fill="none"/>
+      </g>
+    </svg>
+
+  </center>
+  </body>
+</html>

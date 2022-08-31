@@ -1,0 +1,31 @@
+<!--
+  3.  Make use of Path element and create complex shapes such as 
+      curved lines and modify the same program to implement cubic beziers
+  
+-->
+
+<html>
+  <head>    
+    <title>SVG task 3</title>   
+    <style>
+      svg { border: 1px solid black; }
+    </style>
+  </head>
+  <body>
+   <center> 
+    <svg width="300px" height="300px">
+        <path d="M40,140 Q120,30 240,140"  stroke="#131862" stroke-width='4px' fill="#FF77BC"/>
+    </svg>
+
+    <svg width="300px" height="300px">
+        <path d="M20,140 Q100,10 140,140 T260,140" stroke="#064273" stroke-width='4px' fill="#00FFF9"/>
+    </svg>
+
+    <svg width="300px" height="300px">
+        <path d="M20,140 A40,40 60 1,0 240,140 " stroke="#131862" stroke-width='4px' fill="#BEA9DE"/>
+    </svg>
+
+  </center>
+  </body>
+</html>
+
